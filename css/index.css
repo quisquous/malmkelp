@@ -37,6 +37,9 @@ article {
 
   color: #fff;
   text-shadow: 0 0 0.1rem #000, 0 0 0.125rem #000, 0 0 0.125rem #000;
+
+  opacity: 1;
+  transition: 100ms opacity cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 article:last-of-type {
   margin-right: 0;
@@ -54,6 +57,9 @@ article.with-casting {
 article.with-casting > p {
   display: inline-block;
   margin-left: 0.5rem;
+}
+article.disabled {
+  opacity: 0;
 }
 .gauge {
   margin-top: 1.1875rem;
