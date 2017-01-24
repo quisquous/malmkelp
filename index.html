@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="lib/util.js"> </script>
+    <script src="lib/app.js"> </script>
+  </head>
+  <body ondblclick="this.classList.toggle('debug')">
+    <main>
+      <section class="target-info">
+        <article class="with-casting" data-key="Target">
+          <p class="hp">
+            <span data-value="CurrentHP"></span>
+            /
+            <span data-value="MaxHP"></span>
+          </p>
+          <p class="distance">
+            <span data-value="type"></span>:
+            <span data-value="Distance"></span>m
+            (v=<span data-value="vDistance"></span>,
+            <span data-value="EffectiveDistance"></span>m)
+          </p>
+        </article>
+        <article data-key="TargetOfTarget">
+          <p class="hp">
+            <span data-value="CurrentHP"></span>
+            /
+            <span data-value="MaxHP"></span>
+          </p>
+          <p class="distance">
+            <span data-value="type"></span>:
+            <span data-value="Distance"></span>m
+            (v=<span data-value="vDistance"></span>,
+            <span data-value="EffectiveDistance"></span>m)
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

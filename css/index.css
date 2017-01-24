@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  background: transparent;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.debug {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+p {
+  margin: 0;
+}
+section {
+  display: flex;
+}
+article {
+  height: 3.5rem;
+  width: 11rem;
+
+  text-align: right;
+  white-space: nowrap;
+}
+.debug article {
+  border: 1px solid red;
+}
+article.with-casting {
+  display: flex;
+  width: 20rem;
+  margin-right: 0.875rem;
+  padding-bottom: 0.5rem;
+
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+article.with-casting > p {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+/* Colors for type */
+
+article[data-type='1'] { /* Player */
+  color: #95cbf1;
+  text-shadow: 0 0 0.1rem #333, 0 0 0.125rem #333, 0 0 0.125rem #333;
+}
+article[data-type='2'] { /* Mob */
+  color: #ffb8b8;
+  text-shadow: 0 0 0.1rem #c00, 0 0 0.125rem #c00, 0 0 0.125rem #c00;
+}
+article[data-type='7'], article[data-type='12'] { /* 사물, 하우징 가구 */
+  color: #fff;
+  text-shadow: 0 0 0.1rem #000, 0 0 0.125rem #000, 0 0 0.125rem #000;
+}
