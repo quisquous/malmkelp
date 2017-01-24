@@ -39,7 +39,7 @@ article {
 article.with-casting {
   display: flex;
   width: 20rem;
-  margin-right: 0.875rem;
+  margin-right: 0.75rem;
   padding-bottom: 0.5rem;
 
   align-items: flex-end;
