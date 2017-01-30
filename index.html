@@ -9,6 +9,23 @@
   </head>
   <body ondblclick="this.classList.toggle('debug')">
     <main>
+      <!--
+For editors:
+
+* <article>...</article> is a section. I suggest you to don't remove this, else
+  layout will fail.
+* <p>..</p> too. if you want to remove it's contents, just remove it's contents
+  only.
+* <span>..</span> is probably what you want to remove or append; it's fine.
+
+For who know HTML:
+
+* try 'Copy the update variable to clipboard': it's just object.
+  * article[data-key]: Target, Focus, Hover, Anchor, TargetOfTarget
+    * span[data-value] (Useful keys)
+      * Level, (Current|Max)[HMT]P, HPPercent, Name
+      * Distance, EffectiveDistance, vDistance
+      -->
       <section class="target-info">
         <article class="with-casting" data-key="Target">
           <p class="hp">
@@ -17,7 +34,6 @@
             <span data-value="MaxHP"></span>
           </p>
           <p class="distance">
-            <!-- <span data-value="type"></span>: -->
             <span data-value="Distance"></span>m
             (v=<span data-value="vDistance"></span>,
             <span data-value="EffectiveDistance"></span>m)
