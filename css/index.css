@@ -11,9 +11,10 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   line-height: 1.5rem;
+  text-shadow: 0 0 0.1rem #000, 0 0 0.125rem #000, 0 0 0.125rem #000;
 }
 .debug {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(127, 127, 127, 0.1);
 }
 
 .hidden {
@@ -23,8 +24,18 @@ body {
 p {
   margin: 0;
 }
-section {
+h1 {
+  margin: 0.25rem 0;
+  font-size: 1.25rem;
+}
+.target-info {
   display: flex;
+}
+.config {
+  display: none
+}
+.debug .config {
+  display: block
 }
 article {
   height: 3rem;
@@ -36,7 +47,6 @@ article {
   white-space: nowrap;
 
   color: #fff;
-  text-shadow: 0 0 0.1rem #000, 0 0 0.125rem #000, 0 0 0.125rem #000;
 
   opacity: 1;
   transition: 100ms opacity cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -85,6 +95,17 @@ p + .gauge {
 
   height: 100%;
   background: white;
+}
+
+.autoattack article[data-key="Target"] {
+  padding-right: 2.5rem;
+}
+.with-unit::after {
+  display: inline;
+  content: 'm';
+}
+.yalm .with-unit::after {
+  content: 'y';
 }
 
 /* Colors for type */
