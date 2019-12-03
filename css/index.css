@@ -1,4 +1,4 @@
-* {
+﻿* {
   box-sizing: border-box;
 }
 body {
@@ -52,7 +52,7 @@ article {
   color: #fff;
 
   opacity: 1;
-  transition: 100ms opacity cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: 10ms opacity cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 article:last-of-type {
   margin-right: 0;
@@ -64,7 +64,7 @@ article.with-casting {
   display: flex;
   width: 20rem;
 
-  align-items: flex-end;
+  //align-items: flex-end;
   justify-content: flex-end;
 }
 article.with-casting > p {
@@ -83,7 +83,7 @@ article.disabled {
   border-radius: 0.1rem;
 }
 p + .gauge {
-  margin-top: -0.25rem;
+  margin-top: -0.3rem;
 }
 .gauge + p {
   margin-top: -0.125rem;
@@ -95,7 +95,7 @@ p + .gauge {
 .gauge > .bar {
   display: inline-block;
   float: left;
-
+  
   height: 100%;
   background: white;
 }
@@ -109,6 +109,12 @@ p + .gauge {
 }
 .yalm .with-unit::after {
   content: 'y';
+}
+.job {
+  text-align: left;
+}
+.job > .with-unit {
+  float: right;
 }
 
 /* Colors for type */
@@ -152,6 +158,40 @@ article[data-type='3'] .bar { background-color: #e6ffde; }
 /* 0x9: Minion */
 /* 0xC: 하우징 가구 */
 
-article[data-type='7'] .gauge, article[data-type='12'] .gauge {
+article[data-type='0'] .hp,
+article[data-type='3'] .hp,
+article[data-type='4'] .hp,
+article[data-type='5'] .hp,
+article[data-type='6'] .hp,
+article[data-type='7'] .hp,
+article[data-type='8'] .hp,
+article[data-type='9'] .hp,
+article[data-type='10'] .hp,
+article[data-type='11'] .hp,
+article[data-type='12'] .hp,
+article[data-type='0'] .distance,
+article[data-type='3'] .distance,
+article[data-type='4'] .distance,
+article[data-type='5'] .distance,
+article[data-type='6'] .distance,
+article[data-type='7'] .distance,
+article[data-type='8'] .distance,
+article[data-type='9'] .distance,
+article[data-type='10'] .distance,
+article[data-type='11'] .distance,
+article[data-type='12'] .distance,
+article[data-type='0'] .job,
+article[data-type='3'] .job,
+article[data-type='4'] .job,
+article[data-type='5'] .job,
+article[data-type='6'] .job,
+article[data-type='7'] .job,
+article[data-type='8'] .job,
+article[data-type='9'] .job,
+article[data-type='10'] .job,
+article[data-type='11'] .job,
+article[data-type='12'] .job,
+article[data-type='7'] .gauge,
+article[data-type='12'] .gauge {
   display: none;
 }
