@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="css/index.css" />
+    <script src="lib/common.js"></script>
     <script src="lib/util.js"> </script>
     <script src="lib/config.js"> </script>
     <script src="lib/app.js"> </script>
@@ -26,7 +27,7 @@ For who know HTML:
   * article[data-key]: Target, Focus, Hover, Anchor, TargetOfTarget
     * span[data-value] (Useful keys)
       * Level, (Current|Max)[HMT]P, HPPercent, Name
-      * Distance, EffectiveDistance, vDistance
+      * Distance, vDistance
       -->
       <section class="target-info">
         <article class="with-casting" data-key="Target">
@@ -38,7 +39,7 @@ For who know HTML:
           <p class="distance">
             <span data-value="Distance" class="with-unit"></span>
             (v=<span data-value="vDistance"></span>,
-            <span data-value="EffectiveDistance" class="with-unit"></span>)
+            <span data-value="Distance" class="with-unit"></span>)
           </p>
         </article>
         <article data-key="TargetOfTarget">
@@ -48,7 +49,7 @@ For who know HTML:
           <p class="distance">
             <span data-value="Distance" class="with-unit"></span>
             (v=<span data-value="vDistance"></span>,
-            <span data-value="EffectiveDistance" class="with-unit"></span>)
+            <span data-value="Distance" class="with-unit"></span>)
           </p>
         </article>
         <article class="with-gauge" data-key="Hover">
@@ -63,7 +64,7 @@ For who know HTML:
           <p class="distance">
             <span data-value="Distance" class="with-unit"></span>
             (v=<span data-value="vDistance"></span>,
-            <span data-value="EffectiveDistance" class="with-unit"></span>)
+            <span data-value="Distance" class="with-unit"></span>)
           </p>
         </article>
       </section>
